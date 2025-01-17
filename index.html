@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+    <head> 
+        <meta charset="UTF-8">
+        <title>あともーしょん</title>
+        <meta name="description" content="ASMRを気軽に体験できるサイト">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../atomotion/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+$(function () {
+  function end_loader() {
+    $('.loader').fadeOut(800);
+  }
+  $(window).on('load', function () {
+    setTimeout(function () {
+      end_loader();
+    }, 1500)
+  })
+})
+
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+    </head>
+    
+    <body>
+        <div class="loader">
+            <p class="txt">このサイトでは音声が流れます。<br>
+            音量に注意し、イヤホンやヘッドホンをつけてお楽しみください。</p>
+            <img class="onsei" src="../atomotion/images/top/onsei.png">
+          </div>
+        <header class="page-header">
+        <a href="../atomotion/index.html"><img class="toplogo" src="images/top/logo.png" alt="atomotion logo"></a>
+        </header>
+            <div class="layer layer-bg">
+                <div class="layer-txt">
+                  ここは謎の生物、『あっとも』が暮らしているアパート<br>
+                  窓からあっとも達の生活を覗いてみましょう<br>
+                  素敵な音に出会えるかも...
+                </div>
+            </div>
+        <div class="container2">
+        <div class=yanebox><div class="yane"></div></div>
+        <div class="kabe">
+                <div class="item"><a href="../atomotion/room1.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado1.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room2.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado2.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room3.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado3.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room4.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado4.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room5.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado5.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room6.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado6.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room7.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado7.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room8.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado8.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="item"><a href="../atomotion/room9.html"><img src="../atomotion/images/top/mado.png" onmouseover="this.src='../atomotion/images/top/mado9.png'"onmouseout="this.src='../atomotion/images/top/mado.png'"></a></div>
+                <div class="door"><img src="../atomotion/images/top/door.png"></div>
+        </div>
+        </div>
+        </div>
+        <footer>
+            <section id="footer">
+                <div class="wrapper">
+                    <div class="footerbox">
+                        <a href="../atomotion/index.html"><img class="logo" src="images/top/logo.png" width="193" height="60"alt="atomotion logo"></a></div>
+                    <div class="footerbox">
+                        <h3 class="about">ABOUT</h3>
+                        <p>このサイトは、『あっとも』というキャラクターを通して、親しみやすく気軽にASMRを体験することができるサイトです。</p>
+                    </div>
+                </div>
+            <div class="copyright">
+            <p>© 2024 SAYANO TASHIRO</p>
+            </div>
+            </section>
+            </footer>
+    <div class="pagetop">↑</div>
+    </body>
+</html>
