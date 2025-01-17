@@ -1,0 +1,138 @@
+@charset "UTF-8";
+body{
+    background-color: #a19dc9;
+}
+
+
+/* ヘッダー */
+header {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+img{
+    max-width: 100%;
+}
+
+
+/* コンテナ */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #a19dc9;
+    height: 100vh;
+}
+
+
+/* キャラクター */
+#click{
+    position: absolute;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+}
+
+
+/* 背景 */
+.item {
+    position: absolute;
+}
+
+.item.garland {
+    background-image: url(../images/room9/garland.png);
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 122px;
+    top: 100px;
+    left: 50px;
+}
+
+.item.poster {
+    background-image: url(../images/room9/poster.png);
+    background-repeat: no-repeat;
+    width: 634px;
+    height: 315px;
+    top: 300px;
+    right: 20px;
+    z-index: 10;
+}
+@media screen and (max-width: 1440px) {
+    .item.poster {
+        background-image: url(../images/room9/poster.png);
+        background-repeat: no-repeat;
+        width: 634px;
+        height: 315px;
+        top: 100px;
+        right: 20px;
+        z-index: 10;
+    }
+      }
+
+.item.game {
+    background-image: url(../images/room9/game.png);
+    background-repeat: no-repeat;
+    width: 266px;
+    height: 179px;
+    top: 400px;
+    left: 140px;
+    z-index: 20;
+}
+@media screen and (max-width: 1440px) {
+    .item.game {
+        background-image: url(../images/room9/game.png);
+        background-repeat: no-repeat;
+        width: 266px;
+        height: 179px;
+        top: 230px;
+        left: 140px;
+        z-index: 20;
+    }
+      }
+
+.item.bed {
+    background-image: url(../images/room9/bed.png);
+    background-repeat: no-repeat;
+    width: 487px;
+    height: 378px;
+    bottom: 10px;
+    left: 20px;
+    z-index: 20;
+}
+
+.item.tana {
+    background-image: url(../images/room9/tana.png);
+    background-repeat: no-repeat;
+    width: 523px;
+    height: 227px;
+    bottom: 100px;
+    right: 30px;
+    z-index: 30;
+}
+
+.item.yuka{
+    background-color: #b7d4d8;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+
+/* フォント */
+.m-plus-rounded-1c-light {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 250px;
+    font-style: normal;
+  }
+
+
+/* パソコン */
+@media screen and (min-width: 1200px) {
+    .item.c {
+        right: 100px;
+    }
+}

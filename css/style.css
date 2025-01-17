@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+body {
+    background-color: #a0cfc4;
+    font-size: 20px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin: 0; padding: 0;
+}
+@media screen and (max-width: 1440px) {
+body {
+    font-size: 16px;
+    }
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* ローディング */
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2c597;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .loader .txt {
+    font-size: 20px;
+    color: #2f5f5d;
+  }
+@media screen and (max-width: 1440px) {
+.loader .txt {
+        font-size: 16px;
+        color: #2f5f5d;
+      }
+    }
+
+/* ヘッダー */
+header {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+p {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin: 0; padding: 0;
+}
+
+
+/* トップ文と背景 */
+.layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.layer-bg {
+    background-image: url(../images/top/kumo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 620px;
+}
+
+.layer-txt {
+    color: #18605d;
+    letter-spacing: 0.4rem;
+    font-family: "M PLUS Rounded 1c";
+}
+
+.container2 {
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* 文字と重なる背景 */
+
+.yane {
+    background-image: url(../images/top/yane.png);
+    width: 100%;
+    padding-top: 46%;
+    background-position: center;
+    background-size: contain;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+
+.kabe {
+    justify-content: center;
+    background-color: bisque;
+    background-repeat: repeat-x;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: 3px solid #18605d;
+    border-left: 3px solid #18605d;
+}
+
+
+/* 窓リンクとドア */
+.item {
+    margin: 10px;
+    padding: 50px;
+}
+
+.door {
+    margin-top: 50px;
+    padding: 50px;
+}
+
+/* フッター */
+#footer{
+    background: #97a989;
+    padding: 3%;
+}
+
+#footer .wrapper{
+    display: flex;
+    justify-content: left;
+}
+
+#footer .about{
+    margin-bottom: 10px;
+}
+
+.logo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+a{
+    display: inline-block;
+}
+
+.footerbox{
+    width: 20%;
+    color: #18605d;
+}
+
+.copyright {
+    text-align: center;
+    color: #18605cb1;
+    background-color: #97a989;
+    margin-top: 25px;
+}
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #18605d;
+	background-color: rgb(255, 255, 255);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #18605d !important;
+	background-color: #f97d5e;
+	text-decoration: none;
+}
+
+
+/* フォント */
+.m-plus-rounded-1c-light {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
